@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Абдурахмон — Личная страница</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            /* Яркий, современный и привлекательный фон */
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7028e4 100%);
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Эффект Glassmorphism (матовое стекло) */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(25px) saturate(150%);
+            -webkit-backdrop-filter: blur(25px) saturate(150%);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 40px;
+            padding: 50px 30px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Стильное квадратное фото с мягкими углами */
+        .profile-img {
+            width: 220px;
+            height: 220px;
+            border-radius: 30px;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            margin-bottom: 30px;
+            transition: 0.5s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            border-color: #fff;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 800; }
+        
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .contact-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Кнопки в стиле Glass */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        b { color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.3); }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="photo.jpg" alt="Абдурахмон" class="profile-img">
+        
+        <h1>Абдурахмон</h1>
+        
+        <div class="bio">
+            Здравствуйте! Меня зовут Абдурахмон, мне 17 лет. Я живу в Ташкенте — я тут вырос и в данный момент учусь в <b>DEUTSCH SCHOOL</b>. Я скоро закончу школу. <br><br>
+            Теперь расскажу о своей мечте: я хочу жить в Германии, и там работать и учиться. Скоро всё у меня получится! Спасибо за внимание.
+        </div>
+
+        <div class="contact-group">
+            <a href="https://t.me/abu07099" class="btn" target="_blank">Telegram: @abu07099</a>
+            <a href="tel:+998939691050" class="btn">📞 +998 93 969-10-50</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 ЛИЧНАЯ СТРАНИЦА
+        </div>
+    </div>
+
+</body>
+</html>
